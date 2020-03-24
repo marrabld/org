@@ -28,6 +28,14 @@
 *** DONE Meeting with Prok and Ponnie 
     SCHEDULED: <2020-02-05 Wed>
 * Murujuga Rock Art
+** Contacts
+|   | Name            | Centre      | Contact                       |
+|---+-----------------+-------------+-------------------------------|
+| 1 | Klity Grice     | Chem Centre | k.grice@curtin.edu.au         |
+| 2 | Marco Coolen    | Chem Centre | marco.coolen@curtin.edu.au    |
+| 3 | Adrian Baddeley | ECMS        | adrian.baddeley@curtin.edu.au |
+|   |                 |             |                               |
+
 ** Tasks 
 *** TODO Embibe the data from DWER.  
 The Meta data is available but there may be challenges gettin the original data
