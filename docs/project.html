@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title></title>
+<!-- 2020-03-13 Fri 16:27 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Org-mode">
+<meta name="author" content="Dan Marrable">
+
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style type="text/css">
+/* org mode styles on top of twbs */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 18px;
+    margin-bottom: 105px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 101px;
+    background-color: #f5f5f5;
+}
+
+footer > div {
+    padding: 10px;
+}
+
+footer p {
+    margin: 0 0 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#table-of-contents {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote p {
+    font-size: 18px;
+}
+
+pre {
+    font-size: 16px;
+}
+
+.footpara {
+    display: inline-block;
+}
+
+figcaption {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+
+/* from twbs docs */
+
+.bs-docs-sidebar.affix {
+    position: static;
+}
+@media (min-width: 768px) {
+    .bs-docs-sidebar {
+        padding-left: 20px;
+    }
+}
+
+/* All levels of nav */
+.bs-docs-sidebar .nav > li > a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+.bs-docs-sidebar .nav > li > a:hover,
+.bs-docs-sidebar .nav > li > a:focus {
+    padding-left: 19px;
+    color: #A1283B;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #A1283B;
+}
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > .active:hover > a,
+.bs-docs-sidebar .nav > .active:focus > a {
+    padding-left: 18px;
+    font-weight: bold;
+    color: #A1283B;
+    background-color: transparent;
+    border-left: 2px solid #A1283B;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-docs-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav > li > a:focus {
+    padding-left: 29px;
+}
+.bs-docs-sidebar .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav > .active:focus > a {
+    padding-left: 28px;
+    font-weight: 500;
+}
+
+/* Nav: third level (shown on .active) */
+.bs-docs-sidebar .nav .nav .nav {
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav .nav > li > a:focus {
+    padding-left: 39px;
+}
+.bs-docs-sidebar .nav .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav .nav > .active:focus > a {
+    padding-left: 38px;
+    font-weight: 500;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .bs-docs-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .bs-docs-sidebar.affix,
+    .bs-docs-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .bs-docs-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 20px;
+    }
+    .bs-docs-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .bs-docs-sidebar.affix .bs-docs-sidenav,.bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+}
+@media (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .bs-docs-sidebar.affix-bottom,
+    .bs-docs-sidebar.affix {
+        width: 263px;
+    }
+}
+</style>
+<script type="text/javascript">
+$(function() {
+    'use strict';
+
+    $('.bs-docs-sidebar li').first().addClass('active');
+
+    $(document.body).scrollspy({target: '.bs-docs-sidebar'});
+
+    $('.bs-docs-sidebar').affix();
+});
+</script>
+</head>
+<body>
+<div id="content" class="container">
+<div class="row"><div class="col-md-9"><h1 class="title"></h1>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Personal</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Buy</h3>
+<div class="outline-text-3" id="text-1-1">
+</div><div id="outline-container-sec-1-1-1" class="outline-4">
+<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> Powerlifting belt</h4>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Tasks</h3>
+<div class="outline-text-3" id="text-1-2">
+</div><div id="outline-container-sec-1-2-1" class="outline-4">
+<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> <span class="label label-primary TODO">TODO</span> call Landlord about the reticulation</h4>
+</div>
+<div id="outline-container-sec-1-2-2" class="outline-4">
+<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> <span class="label label-primary TODO">TODO</span> Make a tax apointment</h4>
+</div>
+<div id="outline-container-sec-1-2-3" class="outline-4">
+<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> <span class="label label-primary TODO">TODO</span> Call tax office</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Business CIC visualisation roadshow</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Next meeting</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+</div>
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Kevin's Health project</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>Is there a visualisation component.
+</li>
+<li>Is there away to help generate literatures 
+</li>
+<li>Is Kevin available for chat. 
+</li>
+<li>Is it agnostic to the medial data?
+</li>
+<li>Real time dynamce visalistion
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Tasks</h3>
+<div class="outline-text-3" id="text-2-3">
+</div><div id="outline-container-sec-2-3-1" class="outline-4">
+<h4 id="sec-2-3-1"><span class="section-number-4">2.3.1</span> <span class="label label-primary TODO">TODO</span> Does Kevin have an example of this he could share.</h4>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> Dan</h3>
+<div class="outline-text-3" id="text-2-4">
+</div><div id="outline-container-sec-2-4-1" class="outline-4">
+<h4 id="sec-2-4-1"><span class="section-number-4">2.4.1</span> <span class="label label-default DONE">DONE</span> Share with Wes a sample dataset from the Joyce study</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> FBI-CRC</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Tasks</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>Blockchain presentation 
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-3-1-1" class="outline-4">
+<h4 id="sec-3-1-1"><span class="section-number-4">3.1.1</span> <span class="label label-default DONE">DONE</span> Meeting with Everledger</h4>
+</div>
+<div id="outline-container-sec-3-1-2" class="outline-4">
+<h4 id="sec-3-1-2"><span class="section-number-4">3.1.2</span> <span class="label label-default DONE">DONE</span> Meeting with Prok and Ponnie</h4>
+<div class="outline-text-4" id="text-3-1-2">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Murujuga Rock Art</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Tasks</h3>
+<div class="outline-text-3" id="text-4-1">
+</div><div id="outline-container-sec-4-1-1" class="outline-4">
+<h4 id="sec-4-1-1"><span class="section-number-4">4.1.1</span> <span class="label label-primary TODO">TODO</span> Embibe the data from DWER.</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<p>
+The Meta data is available but there may be challenges gettin the original data
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-1-2" class="outline-4">
+<h4 id="sec-4-1-2"><span class="section-number-4">4.1.2</span> <span class="label label-primary TODO">TODO</span> Set up the demo store</h4>
+</div>
+<div id="outline-container-sec-4-1-3" class="outline-4">
+<h4 id="sec-4-1-3"><span class="section-number-4">4.1.3</span> <span class="label label-primary TODO">TODO</span> Set up meetings with stakeholders and Adrain</h4>
+</div>
+<div id="outline-container-sec-4-1-4" class="outline-4">
+<h4 id="sec-4-1-4"><span class="section-number-4">4.1.4</span> <span class="label label-primary TODO">TODO</span> Finish writeup on datastore requirements</h4>
+</div>
+</div>
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Meetings</h3>
+<div class="outline-text-3" id="text-4-2">
+</div><div id="outline-container-sec-4-2-1" class="outline-4">
+<h4 id="sec-4-2-1"><span class="section-number-4">4.2.1</span> Meeting with Klity and Marco Chem Centre <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-03-10 Tue&gt;</span></span></h4>
+<div class="outline-text-4" id="text-4-2-1">
+<ul class="org-ul">
+<li>Need to know data requirements.
+</li>
+<li>Would like to get an example of the data
+</li>
+<li>We need to document the requirements for the <span class="underline">physical samples</span>
+</li>
+<li></li>
+</ul>
+</div>
+
+<ol class="org-ol"><li><a id="sec-4-2-1-1" name="sec-4-2-1-1"></a><span class="label label-primary TODO">TODO</span> Set up training for cloudstor<br ></li></ol>
+</div>
+<div id="outline-container-sec-4-2-2" class="outline-4">
+<h4 id="sec-4-2-2"><span class="section-number-4">4.2.2</span> MAC - Karratha <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-03-05 Thu&gt;</span></span></h4>
+<div class="outline-text-4" id="text-4-2-2">
+<ul class="org-ul">
+<li>Strict lines of communication
+</li>
+<li>Curtin -&gt; Puljapang -&gt; DWER
+</li>
+<li>Meta-data is available maybe not the original CSIRO data 
+</li>
+<li>Stakeholder group meeting <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-04-28 Tue&gt;</span></span>
+</li>
+<li></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-2-3" class="outline-4">
+<h4 id="sec-4-2-3"><span class="section-number-4">4.2.3</span> Meeting Adrian</h4>
+<div class="outline-text-4" id="text-4-2-3">
+<ul class="org-ul">
+<li>Start organising meetings with the stakeholders
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-2-4" class="outline-4">
+<h4 id="sec-4-2-4"><span class="section-number-4">4.2.4</span> Meetings <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-03-13 Fri&gt;</span></span></h4>
+<div class="outline-text-4" id="text-4-2-4">
+<p>
+<b>Andrew Throne</b>
+</p>
+<ul class="org-ul">
+<li>old coour data.  is only 20 sets. 
+</li>
+<li>New approach using 3 different measurments of the 20 sets..  Thousands of datapoints.  
+</li>
+<li>XRF to measure dry cycle deposition 
+</li>
+</ul>
+<p>
+<b>Katy</b> 
+</p>
+<ul class="org-ul">
+<li>characterising the surface layer
+</li>
+<li>weathering and varnishing can be two different things
+</li>
+<li>SEM measurements of layer a few microns deep
+</li>
+<li>XRD measurements in-siu or in the lab
+</li>
+</ul>
+<p>
+<b>Andrew King</b>
+</p>
+<ul class="org-ul">
+<li>Data size 10Gb per case. 8 * 100Gb in total - most of it the first 18th months.
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Windfarm</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> <span class="label label-primary TODO">TODO</span> Send report to Aeolis</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Fish ML</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Open source fish classification using Machine Learning
+</p>
+</div>
+<div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Tasks</h3>
+<div class="outline-text-3" id="text-6-1">
+</div><div id="outline-container-sec-6-1-1" class="outline-4">
+<h4 id="sec-6-1-1"><span class="section-number-4">6.1.1</span> <span class="label label-default DONE">DONE</span> Review Contract for Emplyment</h4>
+</div>
+<div id="outline-container-sec-6-1-2" class="outline-4">
+<h4 id="sec-6-1-2"><span class="section-number-4">6.1.2</span> <span class="label label-default DONE">DONE</span> Email about advertising for position</h4>
+</div>
+<div id="outline-container-sec-6-1-3" class="outline-4">
+<h4 id="sec-6-1-3"><span class="section-number-4">6.1.3</span> <span class="label label-default DONE">DONE</span> Reply to CISCO</h4>
+</div>
+</div>
+<div id="outline-container-sec-6-2" class="outline-3">
+<h3 id="sec-6-2"><span class="section-number-3">6.2</span> Meetings</h3>
+<div class="outline-text-3" id="text-6-2">
+</div><div id="outline-container-sec-6-2-1" class="outline-4">
+<h4 id="sec-6-2-1"><span class="section-number-4">6.2.1</span> Kickoff meeting <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-03-11 Wed&gt;</span></span></h4>
+<div class="outline-text-4" id="text-6-2-1">
+</div><ol class="org-ol"><li><a id="sec-6-2-1-1" name="sec-6-2-1-1"></a><span class="label label-primary TODO">TODO</span> Generate statstics of the training data.<br ></li>
+<li><a id="sec-6-2-1-2" name="sec-6-2-1-2"></a><span class="label label-primary TODO">TODO</span> Filter out obviously terrible data<br ></li>
+<li><a id="sec-6-2-1-3" name="sec-6-2-1-3"></a><span class="label label-primary TODO">TODO</span> Develop filtering scripts.<br ></li>
+<li><a id="sec-6-2-1-4" name="sec-6-2-1-4"></a><span class="label label-primary TODO">TODO</span> Think about how to generate more data.<br ></li>
+<li><a id="sec-6-2-1-5" name="sec-6-2-1-5"></a><span class="label label-primary TODO">TODO</span> Try using segmentation algo, to pull out potential fish targets; remove false positives; send to AIMS for classification<br ></li>
+<li><a id="sec-6-2-1-6" name="sec-6-2-1-6"></a><span class="label label-primary TODO">TODO</span> [Get in touch with Mauro] Use the bounding boxes, parse by siamese network to track and save out frames for more training data.<br ></li></ol>
+</div>
+<div id="outline-container-sec-6-2-2" class="outline-4">
+<h4 id="sec-6-2-2"><span class="section-number-4">6.2.2</span> <span class="label label-primary TODO">TODO</span> CISCO</h4>
+<div class="outline-text-4" id="text-6-2-2">
+<ul class="org-ul">
+<li>Meeting notes 
+</li>
+</ul>
+<div class="org-src-container">
+
+<pre class="src src-Python">print('something special')
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Sydney Fish Markets - Food agility</h2>
+<div class="outline-text-2" id="text-7">
+</div><div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1"><span class="section-number-3">7.1</span> Meetings</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li>6 months 0.1 FTE from the CIC
+</li>
+<li>KO expected ~ <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-03-30 Mon&gt;</span></span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Airline data scraper</h2>
+<div class="outline-text-2" id="text-8">
+</div><div id="outline-container-sec-8-1" class="outline-3">
+<h3 id="sec-8-1"><span class="section-number-3">8.1</span> Tasks</h3>
+<div class="outline-text-3" id="text-8-1">
+<ul class="org-ul">
+<li>Runn the scraper on Pawsey
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> MultiSpecCamera</h2>
+<div class="outline-text-2" id="text-9">
+</div><div id="outline-container-sec-9-0-1" class="outline-4">
+<h4 id="sec-9-0-1"><span class="section-number-4">9.0.1</span> Notes</h4>
+<div class="outline-text-4" id="text-9-0-1">
+<p>
+Output Q factor
+Inputs; SPM, Zenith angle and IOPs
+</p>
+</div>
+</div>
+</div>
+</div><div class="col-md-3"><nav id="table-of-contents">
+<div id="text-table-of-contents" class="bs-docs-sidebar">
+<ul class="nav">
+<li><a href="#sec-1">1. Personal</a>
+<ul class="nav">
+<li><a href="#sec-1-1">1.1. Buy</a></li>
+<li><a href="#sec-1-2">1.2. Tasks</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. Business CIC visualisation roadshow</a>
+<ul class="nav">
+<li><a href="#sec-2-1">2.1. Next meeting</a></li>
+<li><a href="#sec-2-2">2.2. Kevin's Health project</a></li>
+<li><a href="#sec-2-3">2.3. Tasks</a></li>
+<li><a href="#sec-2-4">2.4. Dan</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. FBI-CRC</a>
+<ul class="nav">
+<li><a href="#sec-3-1">3.1. Tasks</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. Murujuga Rock Art</a>
+<ul class="nav">
+<li><a href="#sec-4-1">4.1. Tasks</a></li>
+<li><a href="#sec-4-2">4.2. Meetings</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5. Windfarm</a>
+<ul class="nav">
+<li><a href="#sec-5-1">5.1. Send report to Aeolis</a></li>
+</ul>
+</li>
+<li><a href="#sec-6">6. Fish ML</a>
+<ul class="nav">
+<li><a href="#sec-6-1">6.1. Tasks</a></li>
+<li><a href="#sec-6-2">6.2. Meetings</a></li>
+</ul>
+</li>
+<li><a href="#sec-7">7. Sydney Fish Markets - Food agility</a>
+<ul class="nav">
+<li><a href="#sec-7-1">7.1. Meetings</a></li>
+</ul>
+</li>
+<li><a href="#sec-8">8. Airline data scraper</a>
+<ul class="nav">
+<li><a href="#sec-8-1">8.1. Tasks</a></li>
+</ul>
+</li>
+<li><a href="#sec-9">9. MultiSpecCamera</a></li>
+</ul>
+</div>
+</nav>
+</div></div></div>
+<footer id="postamble" class="">
+<div><p class="author">Author: Dan Marrable</p>
+<p class="date">Created: 2020-03-13 Fri 16:27</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="http://orgmode.org">Org-mode</a> 9.1.9)</p>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+* Personal
+** Buy
+*** Powerlifting belt
+** Tasks
+*** TODO call Landlord about the reticulation
+*** TODO Make a tax apointment 
+*** TODO Call tax office 
+
+* Business CIC visualisation roadshow
+** Next meeting 
+   SCHEDULED: <2020-02-07 Fri>
+** Kevin's Health project 
+- Is there a visualisation component.
+- Is there away to help generate literatures 
+- Is Kevin available for chat. 
+- Is it agnostic to the medial data?
+- Real time dynamce visalistion
+** Tasks
+*** TODO Does Kevin have an example of this he could share.
+
+
+** Dan 
+*** DONE Share with Wes a sample dataset from the Joyce study 
+* FBI-CRC
+** Tasks
+- Blockchain presentation 
+*** DONE Meeting with Everledger
+*** DONE Meeting with Prok and Ponnie 
+    SCHEDULED: <2020-02-05 Wed>
+* Murujuga Rock Art
+** Tasks 
+*** TODO Embibe the data from DWER.  
+The Meta data is available but there may be challenges gettin the original data
+*** TODO Set up the demo store
+*** TODO Set up meetings with stakeholders and Adrain
+*** TODO Finish writeup on datastore requirements
+** Meetings
+*** Meeting with Klity and Marco Chem Centre <2020-03-10 Tue>
+- Need to know data requirements.
+- Would like to get an example of the data
+- We need to document the requirements for the _physical samples_
+- 
+
+**** TODO Set up training for cloudstor
+*** MAC - Karratha <2020-03-05 Thu>
+- Strict lines of communication
+- Curtin -> Puljapang -> DWER
+- Meta-data is available maybe not the original CSIRO data 
+- Stakeholder group meeting <2020-04-28 Tue>
+- 
+*** Meeting Adrian 
+- Start organising meetings with the stakeholders
+*** Meetings <2020-03-13 Fri>
+*Andrew Throne*
+- old coour data.  is only 20 sets. 
+- New approach using 3 different measurments of the 20 sets..  Thousands of datapoints.  
+- XRF to measure dry cycle deposition 
+*Katy* 
+- characterising the surface layer
+- weathering and varnishing can be two different things
+- SEM measurements of layer a few microns deep
+- XRD measurements in-siu or in the lab
+*Andrew King*
+- Data size 10Gb per case. 8 * 100Gb in total - most of it the first 18th months.
+
+
+* Windfarm  
+** TODO Send report to Aeolis 
+   DEADLINE: <2020-01-31 Fri>
+
+* Fish ML 
+Open source fish classification using Machine Learning
+** Tasks
+*** DONE Review Contract for Emplyment
+*** DONE Email about advertising for position 
+*** DONE Reply to CISCO
+** Meetings
+*** Kickoff meeting <2020-03-11 Wed>
+**** TODO Generate statstics of the training data.
+**** TODO Filter out obviously terrible data
+**** TODO Develop filtering scripts.
+**** TODO Think about how to generate more data.
+**** TODO Try using segmentation algo, to pull out potential fish targets; remove false positives; send to AIMS for classification
+**** TODO [Get in touch with Mauro] Use the bounding boxes, parse by siamese network to track and save out frames for more training data. 
+*** TODO CISCO 
+    SCHEDULED: <2020-01-31 Fri>
+- Meeting notes 
+#+BEGIN_SRC Python
+print('something special')
+#+END_SRC
+
+
+* Sydney Fish Markets - Food agility
+** Meetings
+- 6 months 0.1 FTE from the CIC
+- KO expected ~ <2020-03-30 Mon>
+
+* Airline data scraper
+** Tasks
+- Runn the scraper on Pawsey
+* MultiSpecCamera
+*** Notes
+Output Q factor
+Inputs; SPM, Zenith angle and IOPs
+* FOWI project
+** Meeting <2020-03-16 Mon>
+- Notes. 
+- 500 Descriptions of incidents.
+- Install on my machine
+- Ingest the data for Mark
