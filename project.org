@@ -29,12 +29,26 @@
     SCHEDULED: <2020-02-05 Wed>
 * Murujuga Rock Art
 ** Contacts
-|   | Name            | Centre      | Contact                       |
-|---+-----------------+-------------+-------------------------------|
-| 1 | Klity Grice     | Chem Centre | k.grice@curtin.edu.au         |
-| 2 | Marco Coolen    | Chem Centre | marco.coolen@curtin.edu.au    |
-| 3 | Adrian Baddeley | ECMS        | adrian.baddeley@curtin.edu.au |
-|   |                 |             |                               |
+|    | Name             | Centre         | Contact                       |
+|----+------------------+----------------+-------------------------------|
+|  1 | Klity Grice      | Chem Centre    | k.grice@curtin.edu.au         |
+|  2 | Marco Coolen     | Chem Centre    | marco.coolen@curtin.edu.au    |
+|  3 | Adrian Baddeley  | ECMS           | adrian.baddeley@curtin.edu.au |
+|  4 | Aloke Phatak     | CIC            | aloke.phatak@curtin.edu.au    |
+|  5 | Andrew Thorne    | ARTCARE        | andrew.thorn@artcare.cc       |
+|  6 | Andrew King      | lk-engineering | andrew@lk-engineering.com.au  |
+|  7 | Ben Mullins      | Public Health  | b.mullins@curtin.edu.au       |
+|  8 | David Belton     | EPS            | d.belton@curtin.edu.au        |
+|  9 | David Lynch      | Chem Centre    | dlynch@chemcentre.wa.gov.au   |
+| 10 | Helen Brown      | Public Health  | h.brown@curtin.edu.au         |
+| 11 | Katy Evens       | EPS            | k.evans@curtin.edu.au         |
+| 12 | Kathryn Barker   | CIC            | kathryn.barker@curtin.edu.au  |
+| 13 | Ncrese ??        | ??             | ncressie@uow.edu.au           |
+| 14 | Petra Helmoltz   | EPS            | petra.helmholz@curtin.edu.au  |
+| 15 | Ryan Mead-Hunter | Public Health  | r.mead-hunter@curtin.edu.au   |
+| 16 | Toni Hannelly    | Public Health  | t.hannelly@curtin.edu.au      |
+| 17 | Will Rickard     | JdLC           | w.rickard@curtin.edu.au       |
+|    |                  |                |                               |
 
 ** Tasks 
 *** TODO Embibe the data from DWER.  
